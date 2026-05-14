@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>ANIMACION 4</title>
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background-image: url(img/hIyZ9.jpg);
+        }
+        h1{
+            color: white;
+        }
+            .contenedor{
+                width: 900px;
+                height: 400px;
+                border:1px solid black;
+                margin:0 auto;
+                position: relative;
+                overflow:hidden;
+            }
+            .tarjeta1, .tarjeta2, .tarjeta3{
+                width:300px;
+                height: 400px;
+                position: absolute;
+                background-size: cover;
+            }
+            .tarjeta1{
+                background-image: url(img/7c7Nc.jpg);
+                left: 0px;
+                top:500px;
+                animation: tarjeta1 3s 1 forwards;
+            }
+            .tarjeta2{
+                background-image: url(img/M1128.jpg);
+                left:300px;
+                top:600px;
+                animation: tarjeta2 3s 1 forwards 3s;
+            }
+            .tarjeta3{
+                background-image: url(img/UaGpn.jpg);
+                left:600px;
+                top:600px;
+                animation: tarjeta3 3s 1 forwards 6s;
+            }
+                @keyframes tarjeta1{
+                    0%{
+                        top:-300px;
+                        transform:rotateZ(180deg);
+                    }
+                    25%{
+                        top: 300px;
+                        transform:rotateZ(-180deg);
+                    }
+                    50%{
+                        top:0px;
+                        transform:rotateZ(-360deg);
+                    }
+                    75%{
+                        top:300px;
+                        transform:rotateZ(-540deg);
+                    }
+                    100%{
+                        top:0px;
+                        transform: rotateZ(-720deg);
+                    }
+                }
+                @keyframes tarjeta2{
+                    0%{
+                        top:-300px;
+                        transform:rotateY(180deg);
+                    }
+                    25%{
+                        top: 300px;
+                        transform:rotateY(-180deg);
+                    }
+                    50%{
+                        top:0px;
+                        transform:rotateY(-360deg);
+                    }
+                    75%{
+                        top:-300px;
+                        transform:rotateY(-540deg);
+                    }
+                    100%{
+                        top:0px;
+                        transform: rotateY(-720deg);
+                    }
+                }
+                @keyframes tarjeta3{
+                    0%{
+                        top:-300px;
+                        transform: rotateX(180deg);
+                    }
+                    25%{
+                        top: 300px;
+                        transform:rotateX(-180deg);
+                    }
+                    50%{
+                        top:0px;
+                        transform:rotateX(-360deg);
+                    }
+                    75%{
+                        top:300px;
+                        transform:rotateX(-540deg);
+                    }
+                    100%{
+                        top:0px;
+                        transform: rotateX(-720deg);
+                    }
+                }
+                .tarjeta1:hover,.tarjeta2:hover,.tarjeta3:hover{
+                transition:1s;
+                scale:1.2;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <h1>ANIMACION4</h1>
+    <a href="../index.html">VOLVER AL INICIO</a>
+    <body>
+        <div class="contenedor">
+            <div class="tarjeta1"></div>    
+            <div class="tarjeta2"></div>    
+            <div class="tarjeta3"></div>       
+        </div>
+    </body>
+</html>
