@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP PATH CSS</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            background-color: skyblue;
+            position: relative;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .gorrito{
+            width: 120px;
+            height: 120px;
+            background-image: url(img/🎪🤡🌈🖍️\ \(@circuscrayons\)\ on\ Tumblr.jpg);
+            background-size: cover;
+            clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+            position: absolute;
+            left: 140px;
+            top:30px;
+        }
+        .cabeza{
+            width: 100px;
+            height: 100px;
+            background-image: url(img/cara.jpg);
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 150px;
+            top: 150px;
+        }
+        .cuerpo{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/fashion.jpg);
+            background-size: cover;
+            clip-path: polygon(44% 0, 57% 0, 80% 100%, 18% 100%);
+            position: absolute;
+            left: 100px;
+            top:250px;
+        }
+        .brazoD{
+            width: 120px;
+            height: 120px;
+            background-image: url(img/derecho.jpg);
+            background-size: cover;
+            clip-path: polygon(0 29%, 66% 28%, 100% 50%, 71% 74%, 0 73%);
+            position: absolute;
+            left: 220px;
+            top:260px;
+        }
+        .brazoI{
+            width: 110px;
+            height: 110px;
+            background-image: url(img/brazoi.jpg);
+            background-size: cover;
+            clip-path: polygon(26% 26%, 100% 25%, 100% 75%, 28% 75%, 0% 50%);
+            position: absolute;
+            left: 65px;
+            top:270px;
+        }
+        .pieD{
+            width: 150px;
+            height: 150px;
+            background-image: url(img/💝little\ stars\ background.jpg);
+            background-size: cover;
+            clip-path: ellipse(43% 22% at 50% 50%);
+            position: absolute;
+            left: 65px;
+            top:395px;
+        }
+        .pieI{
+            width: 150px;
+            height: 150px;
+             background-image: url(img/💝little\ stars\ background.jpg);
+            background-size: cover;
+            clip-path: ellipse(43% 22% at 50% 50%);
+            position: absolute;
+            left: 190px;
+            top:395px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="gorrito"></div>
+        <div class="cabeza"></div>
+        <div class="cuerpo"></div>
+        <div class="brazoD"></div>
+        <div class="brazoI"></div>
+        <div class="pieD"></div>
+        <div class="pieI"></div>
+    </div>    
+</body>
+</html>
