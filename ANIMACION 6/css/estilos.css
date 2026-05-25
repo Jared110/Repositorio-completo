@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: black;
+}
+
+.contenedor{
+    width: 600px;
+    height: 900px;
+    border:1px solid white;
+    margin: 0 auto;/*centrar el contenedor*/
+    position: relative;
+    overflow: hidden;
+}
+
+.franja1{
+    width: 600px;
+    height: 400px;
+    background-color: rgba(233, 180, 8, 0.521);
+    position: absolute;
+    top:200px;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 50%);
+    z-index: 2;
+}
+
+.franja2{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(224, 194, 24);
+    position: absolute;
+    top:450px;
+    left:60px;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    z-index: 3;
+}
+
+.franja3{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(41, 40, 40);
+    position: absolute;
+    top:0px;
+    left:0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    z-index:-1;
+}
+.franja4{
+    width: 600px;
+    height: 400px;
+    background-image: url(img/group-fitness-class-near-me.jpg);
+    background-size: cover;
+    position: absolute;
+    top:200px;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 50%);
+    z-index: 1;
+}
+.texto1{
+        width: 50px;
+        height: 60px;
+        font-size: 50px;
+        color: yellow;
+        font-family: "Bold";
+        position: absolute;
+        top:100px;
+        left: 300px;
+        }
+.texto2{
+        width: 50px;
+        height: 60px;
+        font-size: 50px;
+        color: white;
+        font-family: "Bold";
+        position: absolute;
+        top:140px;
+        left: 300px;
+        }
+.texto3{
+        width: 50px;
+        height: 60px;
+        font-size: 50px;
+        color: white;
+        font-family: "Bold";
+        position: absolute;
+        top:180px;
+        left: 300px;
+        }                
+.texto4{
+        width: 50px;
+        height: 40px;
+        font-size: 36px;
+        color: black;
+        font-family: "Bold";
+        position: absolute;
+        top:510px;
+        left: 95px;
+        z-index: 5;
+        }  
+.texto5{
+        width: 50px;
+        height: 40px;
+        font-size: 36px;
+        color: black;
+        font-family: "Bold";
+        position: absolute;
+        top:550px;
+        left: 95px;
+        z-index: 5;
+        }  
+.texto6{
+        width: 240px;
+        height: 230px;
+        font-size: 15px;
+        color: black;
+        font-family: "Bold";
+        position: absolute;
+        top:590px;
+        left: 95px;
+        z-index: 5;
+        }   
+.texto7{
+        width: 50px;
+        height: 60px;
+        font-size: 50px;
+        color: white;
+        font-family: "Bold";
+        position: absolute;
+        top:180px;
+        left: 300px;
+        }  
+.modelo{
+    width: 350px;
+    top: 110px;
+    position: absolute;
+    z-index: 2;
+}
