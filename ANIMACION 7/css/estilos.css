@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 1600px;
+    height: 900px;
+    border:1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.NOMBRE{
+    fill:rgba(255, 255, 255, 0);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 0px;
+    top: -50px;
+    left: -130px;
+    position: absolute;
+    stroke-dasharray:0%;
+    animation: nombre 3s infinite alternate;
+    z-index:1;
+}
+
+@keyframes nombre{
+    from{
+        stroke-width: 0px;
+        stroke-dasharray: 0%;
+    }
+    to{
+        stroke-width: 100px;
+        stroke-dasharray: 150%;
+    }
+}
+
+.cuadrito{
+    background-image: url(img/fndo.png);
+    background-size: cover;
+    width: 1600px;
+    height: 900px;
+    z-index: -2;
+    scale: 1.3;
+    animation: fondo 1 ease forwards 10s;
+}
+@keyframes fondo {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);   
+    }
+}
+.cuadrito2{
+    background-image: url(img/png.png);
+    background-size: cover;
+    width: 1600px;
+    height: 900px;
+    z-index: 5;
+    animation: acercar 10 ease forwards 20s;
+}
+@keyframes acercar {
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(5);   
+    }
+}
